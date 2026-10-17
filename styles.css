@@ -18,3 +18,9 @@
   .detail-gallery figure, .detail-gallery figure:first-child { min-height:0; padding:0; }
   .image-wrap { height:330px; }
 }
+
+/* CORRECCIÓ PORTADA: cada pàgina sencera amb l'altura natural, sense retallar. */
+.project-grid{align-items:start}
+.project-card .image-wrap{height:auto!important;min-height:0!important;aspect-ratio:auto!important;display:block!important;overflow:visible!important;background:transparent!important}
+.project-card .image-wrap img{display:block!important;width:100%!important;height:auto!important;max-width:100%!important;max-height:none!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center!important;transform:none!important}
+.project-card:hover .image-wrap img{transform:none!important}
