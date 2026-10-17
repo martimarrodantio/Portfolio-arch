@@ -1,62 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ca">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contacte amb Martí Marrodán Tió. Arquitectura i col·laboracions.">
-  <title>Contacte — Martí Marrodán Tió</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Contacte amb Martí Marrodán Tió. Arquitectura i col·laboracions." name="description"/>
+<title>Contacte — Martí Marrodán Tió</title>
+<link href="styles.css?v=4" rel="stylesheet"/>
+<link href="favicon.png" rel="icon" type="image/png"/><link href="apple-touch-icon.png" rel="apple-touch-icon"/></head>
 <body class="standalone-page">
-  <header class="site-header">
-    <a class="wordmark" href="index.html">MARTÍ MARRODÁN TIÓ<span>ARQUITECTURA / PORTAFOLIS</span></a>
-    <nav aria-label="Navegació principal">
-      <a href="index.html#projectes">Projectes</a>
-      <a href="sobre-mi.html">Sobre mi</a>
-      <a class="active" href="contacte.html">Contacte</a>
-    </nav>
-    <button id="menu" class="menu" aria-label="Obrir menú" aria-expanded="false">Menú +</button>
-  </header>
-
-  <main class="page-main">
-    <section class="single-page-section contact-page">
-      <div class="section-title"><h1 class="section-small-title">Contacte</h1><span>PARLEM?</span></div>
-      <div class="contact-layout">
-        <div class="contact-intro">
-          <p class="contact-heading">Tens un projecte<br><em>en ment?</em></p>
-          <p class="contact-lead">Per col·laboracions, oportunitats o qualsevol consulta relacionada amb arquitectura, pots escriure’m des d’aquest formulari.</p>
-          <a class="linkedin-link" href="https://www.linkedin.com/in/martimarrodantio/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a>
-        </div>
-
-        <form class="contact-form" action="https://formsubmit.co/mmarrodantio@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Nou contacte des del portafolis de Martí Marrodán Tió">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="https://martimarrodantio.github.io/Portfolio-arch/gracies.html">
-          <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-          <label for="nom">Nom de contacte <span>*</span></label>
-          <input id="nom" name="Nom" type="text" autocomplete="name" required minlength="2" maxlength="100" placeholder="Nom i cognoms">
-
-          <label for="email">Correu electrònic <span>*</span></label>
-          <input id="email" name="email" type="email" autocomplete="email" required maxlength="160" placeholder="nom@exemple.com">
-
-          <label for="descripcio">Descripció <span>*</span></label>
-          <textarea id="descripcio" name="Descripció" required minlength="10" maxlength="3000" rows="8" placeholder="Explica breument el motiu del contacte..."></textarea>
-
-          <div class="form-bottom">
-            <p>* Tots els camps són obligatoris.</p>
-            <button type="submit" class="submit-button">Enviar missatge <span>↗</span></button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <span>© <span id="year"></span> MARTÍ MARRODÁN TIÓ</span>
-    <span>ARQUITECTURA · UNIVERSITAT DE GIRONA</span>
-    <a href="index.html">Inici ↑</a>
-  </footer>
-  <script src="script.js"></script>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="Martí Marrodán Tió — Inici" class="brand" href="index.html#inici">
+<img alt="" class="brand-logo" height="36" src="logo-marti.png" width="36"/>
+<span class="brand-name">MARTÍ MARRODÁN TIÓ<small>ARQUITECTURA</small></span>
+</a>
+<nav aria-label="Navegació principal" id="primary-navigation">
+<a href="index.html#projectes">Projectes</a>
+<a href="sobre-mi.html">Sobre mi</a>
+<a class="active" href="contacte.html">Contacte</a>
+</nav>
+<div class="header-right">
+<span class="header-period">2024 — 2026</span>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Obrir menú de navegació" class="menu" id="menu" type="button">Menú +</button>
+</div>
+</div>
+</header>
+<main class="page-main">
+<section class="single-page-section contact-page">
+<div class="section-title"><h1 class="section-small-title">Contacte</h1><span>PARLEM?</span></div>
+<div class="contact-layout">
+<div class="contact-intro">
+<p class="contact-heading">Tens un projecte<br/><em>en ment?</em></p>
+<p class="contact-lead">Per col·laboracions, oportunitats o qualsevol consulta relacionada amb arquitectura, pots escriure’m des d’aquest formulari.</p>
+<a class="linkedin-link" href="https://www.linkedin.com/in/martimarrodantio/" rel="noopener noreferrer" target="_blank">LinkedIn <span>↗</span></a>
+</div>
+<form action="https://formsubmit.co/mmarrodantio@gmail.com" class="contact-form" method="POST">
+<input name="_subject" type="hidden" value="Nou contacte des del portafolis de Martí Marrodán Tió"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_next" type="hidden" value="https://martimarrodantio.github.io/Portfolio-arch/gracies.html"/>
+<input aria-hidden="true" autocomplete="off" class="honeypot" name="_honey" tabindex="-1" type="text"/>
+<label for="nom">Nom de contacte <span>*</span></label>
+<input autocomplete="name" id="nom" maxlength="100" minlength="2" name="Nom" placeholder="Nom i cognoms" required="" type="text"/>
+<label for="email">Correu electrònic <span>*</span></label>
+<input autocomplete="email" id="email" maxlength="160" name="email" placeholder="nom@exemple.com" required="" type="email"/>
+<label for="descripcio">Descripció <span>*</span></label>
+<textarea id="descripcio" maxlength="3000" minlength="10" name="Descripció" placeholder="Explica breument el motiu del contacte..." required="" rows="8"></textarea>
+<div class="form-bottom">
+<p>* Tots els camps són obligatoris.</p>
+<button class="submit-button" type="submit">Enviar missatge <span>↗</span></button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<footer>
+<span class="footer-identity"><img alt="" class="footer-logo" height="20" src="logo-marti.png" width="20"/><span>© <span id="year"></span> MARTÍ MARRODÁN TIÓ</span></span>
+<span>ARQUITECTURA · UNIVERSITAT DE GIRONA</span>
+<a href="index.html">Inici ↑</a>
+</footer>
+<script src="script.js?v=4"></script>
 </body>
 </html>

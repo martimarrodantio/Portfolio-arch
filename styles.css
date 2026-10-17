@@ -20,3 +20,84 @@
   .project-card .card-meta{margin-top:15px;margin-bottom:10px;align-self:auto;}
   .project-card .card-title{margin:0;font-size:clamp(26px,6vw,39px);}
 }
+
+
+/* ====== Capçalera minimalista editorial, inspirada en la sobrietat d'Apple ====== */
+:root { --header-height: 62px; }
+.site-header {
+  height: var(--header-height);
+  padding: 0 4.5vw;
+  border-bottom: 1px solid rgba(23,23,21,.085);
+  background: rgba(250,250,249,.93);
+  -webkit-backdrop-filter: saturate(165%) blur(16px);
+  backdrop-filter: saturate(165%) blur(16px);
+  top: 0;
+}
+.header-inner {
+  width: 100%;
+  max-width: 1480px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(200px,1fr) auto minmax(200px,1fr);
+  align-items: center;
+  column-gap: 26px;
+}
+.brand { display: inline-flex; gap: 12px; align-items:center; justify-self:start; min-width:0; text-decoration:none; }
+.brand-logo { width: 33px; height: 33px; object-fit:contain; flex:none; }
+.brand-name { display:flex; flex-direction:column; justify-content:center; gap:3px;
+  font-size: 11px; font-weight:600; letter-spacing:.028em; white-space:nowrap; line-height:1.15; }
+.brand-name small { font-size:9px; font-weight:400; letter-spacing:.18em; color:var(--muted); }
+.site-header nav {
+  display:flex;
+  align-items:center;
+  gap:clamp(24px,4.8vw,69px);
+  font-size:12px;
+  letter-spacing: -.005em;
+  white-space:nowrap;
+  height:100%;
+}
+.site-header nav a {
+  padding:22px 0 19px;
+  border-bottom:2px solid transparent;
+  color:#424241;
+  transition:color .2s ease, border-color .2s ease, opacity .2s ease;
+}
+.site-header nav a:hover,.site-header nav a.active { color:var(--ink); opacity:1; border-color:var(--ink); }
+.header-right { display:flex; align-items:center; justify-content:flex-end; gap:18px; }
+.header-period { font-size:10px; color:var(--muted); letter-spacing:.13em; white-space:nowrap; }
+.site-header .menu { display:none; }
+.hero { min-height:calc(100svh - var(--header-height)); }
+.page-main, .single-page-section, .thanks-main { min-height:calc(100svh - var(--header-height)); }
+.detail-top { height:var(--header-height); }
+.detail-top .wordmark { display:inline-flex; align-items:center; gap:10px; }
+.detail-top .wordmark .detail-logo { width:29px; height:29px; object-fit:contain; }
+.footer-identity { display:inline-flex; align-items:center; gap:11px; }
+.footer-logo { width:18px; height:18px; object-fit:contain; opacity:.72; }
+.site-header a:focus-visible,.site-header button:focus-visible { outline: 2px solid currentColor; outline-offset:5px; }
+@media (max-width:900px) {
+  .header-inner { grid-template-columns:minmax(150px,1fr) auto; }
+  .header-right { grid-column:2; grid-row:1; }
+  .header-period { display:none; }
+  .site-header nav { position:absolute; top:var(--header-height); left:0; right:0;
+    height:auto; display:none; padding:14px 4.5vw 28px; gap:0;
+    flex-direction:column; align-items:stretch;
+    background:rgba(250,250,249,.99); border-bottom:1px solid var(--line);
+    box-shadow:0 24px 32px rgba(20,20,20,.045); }
+  .site-header nav.open { display:flex; }
+  .site-header nav a { padding:17px 0; border-bottom:1px solid var(--line); font-size:15px; }
+  .site-header nav a.active { border-bottom:1px solid var(--ink); }
+  .site-header .menu { display:inline-flex; align-items:center; justify-content:center; border:0;
+    padding:12px 0 12px 12px; background:none; color:var(--ink); font-size:12px; }
+}
+@media (max-width:700px) {
+  :root { --header-height: 59px; }
+  .site-header { height:var(--header-height); padding:0 5vw; }
+  .brand { gap:9px; }
+  .brand-logo { width:30px; height:30px; }
+  .brand-name { font-size:10px; }
+  .brand-name small { font-size:8px; }
+  .header-inner { grid-template-columns:minmax(0,1fr) auto; }
+  .site-header nav { top:var(--header-height); }
+}
+@media (max-width:360px) { .brand-name small { display:none; } }

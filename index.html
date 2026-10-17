@@ -1,58 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ca">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portafolis d'arquitectura de Martí Marrodán Tió. Projectes acadèmics, dibuix i recerca espacial.">
-  <title>Martí Marrodán Tió — Arquitectura</title>
-  <link rel="stylesheet" href="styles.css?v=3">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Portafolis d'arquitectura de Martí Marrodán Tió. Projectes acadèmics, dibuix i recerca espacial." name="description"/>
+<title>Martí Marrodán Tió — Arquitectura</title>
+<link href="styles.css?v=4" rel="stylesheet"/>
+<link href="favicon.png" rel="icon" type="image/png"/><link href="apple-touch-icon.png" rel="apple-touch-icon"/></head>
 <body>
-  <header class="site-header">
-    <a class="wordmark" href="index.html#inici">MARTÍ MARRODÁN TIÓ<span>ARQUITECTURA / PORTAFOLIS</span></a>
-    <nav aria-label="Navegació principal">
-      <a href="index.html#projectes">Projectes</a>
-      <a href="sobre-mi.html">Sobre mi</a>
-      <a href="contacte.html">Contacte</a>
-    </nav>
-    <button id="menu" class="menu" aria-label="Obrir menú" aria-expanded="false">Menú +</button>
-  </header>
-
-  <main id="inici">
-    <section class="hero">
-      <div class="hero-kicker"><span>PORTAFOLIS DE GRAU</span><span>UNIVERSITAT DE GIRONA</span><span>2024 — 2026</span></div>
-      <h1>Arquitectura<br><em>com a procés.</em></h1>
-      <div class="hero-bottom">
-        <p>Una selecció de projectes acadèmics que exploren la relació entre espai, context i experiència col·lectiva.</p>
-        <a href="#projectes" class="arrow-link">Explorar projectes <span>↘</span></a>
-      </div>
-    </section>
-
-    <section id="projectes" class="projects">
-      <div class="section-title"><h2>Projectes seleccionats</h2><span>01 — 06</span></div>
-      <div id="project-grid" class="project-grid"></div>
-    </section>
-  </main>
-
-  <footer>
-    <span>© <span id="year"></span> MARTÍ MARRODÁN TIÓ</span>
-    <span>ARQUITECTURA · UNIVERSITAT DE GIRONA</span>
-    <a href="contacte.html">Contacte ↗</a>
-  </footer>
-
-  <dialog id="detail">
-    <div class="detail-shell">
-      <div class="detail-top">
-        <a class="wordmark" href="index.html#projectes" id="back-home">MARTÍ MARRODÁN TIÓ<span>PROJECTE / DETALL</span></a>
-        <button class="close" id="close" aria-label="Tancar projecte">Tancar ×</button>
-      </div>
-      <div id="detail-content"></div>
-      <div class="detail-bottom">
-        <button id="prev">← Anterior</button><span>PROJECTES / 2024—2026</span><button id="next">Següent →</button>
-      </div>
-    </div>
-  </dialog>
-
-  <script src="script.js?v=3"></script>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="Martí Marrodán Tió — Inici" class="brand" href="index.html#inici">
+<img alt="" class="brand-logo" height="36" src="logo-marti.png" width="36"/>
+<span class="brand-name">MARTÍ MARRODÁN TIÓ<small>ARQUITECTURA</small></span>
+</a>
+<nav aria-label="Navegació principal" id="primary-navigation">
+<a class="active" href="index.html#projectes">Projectes</a>
+<a href="sobre-mi.html">Sobre mi</a>
+<a href="contacte.html">Contacte</a>
+</nav>
+<div class="header-right">
+<span class="header-period">2024 — 2026</span>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Obrir menú de navegació" class="menu" id="menu" type="button">Menú +</button>
+</div>
+</div>
+</header>
+<main id="inici">
+<section class="hero">
+<div class="hero-kicker"><span>PORTAFOLIS DE GRAU</span><span>UNIVERSITAT DE GIRONA</span><span>2024 — 2026</span></div>
+<h1>Arquitectura<br/><em>com a procés.</em></h1>
+<div class="hero-bottom">
+<p>Una selecció de projectes acadèmics que exploren la relació entre espai, context i experiència col·lectiva.</p>
+<a class="arrow-link" href="#projectes">Explorar projectes <span>↘</span></a>
+</div>
+</section>
+<section class="projects" id="projectes">
+<div class="section-title"><h2>Projectes seleccionats</h2><span>01 — 06</span></div>
+<div class="project-grid" id="project-grid"></div>
+</section>
+</main>
+<footer>
+<span class="footer-identity"><img alt="" class="footer-logo" height="20" src="logo-marti.png" width="20"/><span>© <span id="year"></span> MARTÍ MARRODÁN TIÓ</span></span>
+<span>ARQUITECTURA · UNIVERSITAT DE GIRONA</span>
+<a href="contacte.html">Contacte ↗</a>
+</footer>
+<dialog id="detail">
+<div class="detail-shell">
+<div class="detail-top">
+<a class="wordmark" href="index.html#projectes" id="back-home"><img alt="" class="detail-logo" height="28" src="logo-marti.png" width="28"/>MARTÍ MARRODÁN TIÓ<span>PROJECTE / DETALL</span></a>
+<button aria-label="Tancar projecte" class="close" id="close">Tancar ×</button>
+</div>
+<div id="detail-content"></div>
+<div class="detail-bottom">
+<button id="prev">← Anterior</button><span>PROJECTES / 2024—2026</span><button id="next">Següent →</button>
+</div>
+</div>
+</dialog>
+<script src="script.js?v=4"></script>
 </body>
 </html>

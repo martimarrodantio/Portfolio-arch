@@ -1,12 +1,24 @@
-PORTFOLIO D’ARQUITECTURA — CORRECCIÓ D’IMATGES
+PORTFOLIO MARTÍ MARRODÁN TIÓ — CAPÇALERA MINIMALISTA + LOGO
 
-PROBLEMA: A la portada es mostraven làmines A4 reduïdes a dues columnes i els dibuixos es veien molt petits.
-SOLUCIÓ: Cada projecte es mostra en una fila gran, amb la làmina sencera i una millora subtil de contrast. Les pàgines interiors continuen completes i sense retalls.
+INCLÒS:
+- Barra superior fina i translúcida inspirada en webs editorials com Apple.
+- Logotip original del teu fitxer, adaptat sobre fons transparent a la capçalera.
+- Favicon personalitzat i icona per a mòbil.
+- Els 6 projectes i les seves imatges, sense canviar cap làmina.
+- Pàgines independents Sobre mi i Contacte, amb formulari existent.
+- Tots els fitxers al mateix nivell (sense carpeta 'assets').
 
-PUBLICACIÓ:
-1. Puja TOTS els fitxers d’aquesta carpeta a l’ARREL del repositori GitHub Portfolio-arch (NO la carpeta sencera i NO el ZIP).
-2. Han de quedar index.html, styles.css, script.js, contacte.html, sobre-mi.html, gracies.html i 24 imatges .webp tots al mateix nivell.
-3. Confirma amb “Commit changes”.
-4. Espera GitHub Pages i fes Ctrl+F5.
+PUBLICAR A GITHUB PAGES:
+1. Obre el repositori martimarrodantio/Portfolio-arch.
+2. A la branca main, puja TOT EL CONTINGUT d'aquesta carpeta descomprimida:
+   index.html, sobre-mi.html, contacte.html, gracies.html, styles.css, script.js,
+   logo-marti.png, favicon.png, apple-touch-icon.png, fitxers *.webp.
+3. Si GitHub demana substituir els fitxers que ja existeixen, accepta.
+4. Fes Commit changes i espera uns minuts.
+5. Obre https://martimarrodantio.github.io/Portfolio-arch/ i prem Ctrl+F5.
 
-Aquesta versió no inclou el PDF original. El formulari de Contacte i els textos es conserven.
+IMPORTANT:
+- No pugis l'arxiu ZIP al repositori; puja els fitxers que conté.
+- El formulari de Contacte continua utilitzant el servei gratuït FormSubmit.
+  Has de confirmar-ne l'activació per correu si encara no ho has fet.
+- No s'inclou el PDF original.
