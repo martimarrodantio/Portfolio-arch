@@ -18,8 +18,9 @@ if(grid && dialog && content){
     const b=document.createElement('button');
     b.className='project-card';
     b.setAttribute('aria-label',`Obrir projecte ${p.title}`);
-    b.innerHTML=`<div class="image-wrap"><img loading="lazy" src="${p.slug}-pagina-${cover}.webp" alt="Làmina gràfica del projecte ${p.title}"></div><div class="card-meta"><span>${String(i+1).padStart(2,'0')} / ${p.category}</span><span>${p.year} ↗</span></div><h2 class="card-title">${p.title}</h2>`;
+    b.innerHTML=`<div class="image-wrap"><img loading="lazy" src="portada-${p.slug}.webp" alt="Làmina gràfica del projecte ${p.title}"></div><div class="card-meta"><span>${String(i+1).padStart(2,'0')} / ${p.category}</span><span>${p.year} ↗</span></div><h2 class="card-title">${p.title}</h2>`;
     b.addEventListener('click',()=>openProject(i));
+    b.querySelector('img').addEventListener('error', e=>{e.target.alt='Imatge no disponible: '+p.title; e.target.classList.add('asset-error')});
     grid.appendChild(b);
   });
 

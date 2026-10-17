@@ -1,0 +1,12 @@
+PORTFOLIO D’ARQUITECTURA — CORRECCIÓ D’IMATGES
+
+PROBLEMA: A la portada es mostraven làmines A4 reduïdes a dues columnes i els dibuixos es veien molt petits.
+SOLUCIÓ: Cada projecte es mostra en una fila gran, amb la làmina sencera i una millora subtil de contrast. Les pàgines interiors continuen completes i sense retalls.
+
+PUBLICACIÓ:
+1. Puja TOTS els fitxers d’aquesta carpeta a l’ARREL del repositori GitHub Portfolio-arch (NO la carpeta sencera i NO el ZIP).
+2. Han de quedar index.html, styles.css, script.js, contacte.html, sobre-mi.html, gracies.html i 24 imatges .webp tots al mateix nivell.
+3. Confirma amb “Commit changes”.
+4. Espera GitHub Pages i fes Ctrl+F5.
+
+Aquesta versió no inclou el PDF original. El formulari de Contacte i els textos es conserven.
