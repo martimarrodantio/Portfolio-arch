@@ -1,32 +1,58 @@
 <!doctype html>
 <html lang="ca">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Portafolis de grau d'arquitectura de Martí Marrodán Tió. Projectes, arquitectura i exploració.">
-<title>Martí Marrodán Tió — Arquitectura</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="contacte.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolis d'arquitectura de Martí Marrodán Tió. Projectes acadèmics, dibuix i recerca espacial.">
+  <title>Martí Marrodán Tió — Arquitectura</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header"><a class="wordmark" href="#inici">MARTÍ MARRODÁN TIÓ<span>ARQUITECTURA / PORTAFOLIS</span></a><nav aria-label="Navegació principal"><a href="#projectes">Projectes</a><a href="#sobre-mi">Sobre mi</a><a href="#contacte">Contacte</a></nav><button id="menu" class="menu" aria-label="Obrir menú" aria-expanded="false">Menú +</button></header>
-<main id="inici">
-<section class="hero"><div class="hero-kicker"><span>PORTAFOLIS DE GRAU</span><span>UNIVERSITAT DE GIRONA</span><span>2024 — 2026</span></div><h1>Arquitectura<br><em>com a procés.</em></h1><div class="hero-bottom"><p>Una selecció de projectes acadèmics que exploren la relació entre espai, context i experiència col·lectiva.</p><a href="#projectes" class="arrow-link">Explorar projectes <span>↘</span></a></div></section>
-<section id="projectes" class="projects"><div class="section-title"><h2>Projectes seleccionats</h2><span>01 — 06</span></div><div id="project-grid" class="project-grid"></div></section>
-<section id="sobre-mi" class="about"><div class="section-title"><h2>Sobre mi</h2><span>PERFIL</span></div><div class="about-layout"><p class="about-heading">Pensament crític.<br>Creativitat.<br>Rigor tècnic.</p><div class="about-copy"><p>Em dic Martí Marrodán Tió i curso el Grau en Estudis d’Arquitectura a la Universitat de Girona. Entenc l’arquitectura com una disciplina que combina pensament crític, creativitat i rigor tècnic.</p><p>El meu procés projectual parteix del concepte, l’anàlisi del context i la recerca de solucions coherents i sensibles a l’espai. El treball acadèmic i col·laboratiu m’ha ensenyat a integrar diferents mirades i a entendre l’arquitectura com un exercici col·lectiu, en diàleg constant amb l’entorn.</p></div></div></section>
-<section id="contacte" class="contact-section" aria-labelledby="contact-title">
-  <div class="section-title"><h2 id="contact-title">Contacte</h2><span>PARLEM?</span></div>
-  <div class="contact-layout">
-    <p class="contact-heading">Tens un projecte<br><em>en ment?</em></p>
-    <div class="contact-details">
-      <p>Si vols parlar de projectes, col·laboracions o arquitectura, estaré encantat de llegir-te.</p>
-      <a class="contact-primary" href="mailto:mmarrodantio@gmail.com?subject=Contacte%20des%20del%20portafolis">Envia’m un correu <span aria-hidden="true">↗</span></a>
-      <a class="contact-secondary" href="https://www.linkedin.com/in/martimarrodantio/" target="_blank" rel="noopener noreferrer">Connecta amb mi a LinkedIn <span aria-hidden="true">↗</span></a>
-      <p class="contact-email">mmarrodantio@gmail.com</p>
+  <header class="site-header">
+    <a class="wordmark" href="index.html#inici">MARTÍ MARRODÁN TIÓ<span>ARQUITECTURA / PORTAFOLIS</span></a>
+    <nav aria-label="Navegació principal">
+      <a href="index.html#projectes">Projectes</a>
+      <a href="sobre-mi.html">Sobre mi</a>
+      <a href="contacte.html">Contacte</a>
+    </nav>
+    <button id="menu" class="menu" aria-label="Obrir menú" aria-expanded="false">Menú +</button>
+  </header>
+
+  <main id="inici">
+    <section class="hero">
+      <div class="hero-kicker"><span>PORTAFOLIS DE GRAU</span><span>UNIVERSITAT DE GIRONA</span><span>2024 — 2026</span></div>
+      <h1>Arquitectura<br><em>com a procés.</em></h1>
+      <div class="hero-bottom">
+        <p>Una selecció de projectes acadèmics que exploren la relació entre espai, context i experiència col·lectiva.</p>
+        <a href="#projectes" class="arrow-link">Explorar projectes <span>↘</span></a>
+      </div>
+    </section>
+
+    <section id="projectes" class="projects">
+      <div class="section-title"><h2>Projectes seleccionats</h2><span>01 — 06</span></div>
+      <div id="project-grid" class="project-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> MARTÍ MARRODÁN TIÓ</span>
+    <span>ARQUITECTURA · UNIVERSITAT DE GIRONA</span>
+    <a href="contacte.html">Contacte ↗</a>
+  </footer>
+
+  <dialog id="detail">
+    <div class="detail-shell">
+      <div class="detail-top">
+        <a class="wordmark" href="index.html#projectes" id="back-home">MARTÍ MARRODÁN TIÓ<span>PROJECTE / DETALL</span></a>
+        <button class="close" id="close" aria-label="Tancar projecte">Tancar ×</button>
+      </div>
+      <div id="detail-content"></div>
+      <div class="detail-bottom">
+        <button id="prev">← Anterior</button><span>PROJECTES / 2024—2026</span><button id="next">Següent →</button>
+      </div>
     </div>
-  </div>
-</section>
-</main>
-<footer><span>© <span id="year"></span> MARTÍ MARRODÁN TIÓ</span><span>ARQUITECTURA · UNIVERSITAT DE GIRONA</span><a href="#inici">Tornar a dalt ↑</a></footer>
-<dialog id="detail"><div class="detail-shell"><div class="detail-top"><a class="wordmark" href="#inici" id="back-home">MARTÍ MARRODÁN TIÓ<span>PROJECTE / DETALL</span></a><button class="close" id="close" aria-label="Tancar projecte">Tancar ×</button></div><div id="detail-content"></div><div class="detail-bottom"><button id="prev">← Anterior</button><span>PROJECTES / 2024—2026</span><button id="next">Següent →</button></div></div></dialog>
-<script src="script.js"></script>
-</body></html>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
